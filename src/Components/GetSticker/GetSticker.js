@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useAlbum } from '../../Context/AlbumContext';
 import { useTimer } from '../../Context/TimerContext';
-import './GetStickers.css';
+import './GetSticker.css';
 
 function GetStickers() {
   const { agregarAlAlbum, descartarLamina, estaEnElAlbum } = useAlbum();
@@ -80,7 +80,7 @@ function GetStickers() {
       const nuevasLaminas = endpoints.map((endpoint) => {
         const stickersList = allStickers[endpoint];
         if (!stickersList || stickersList.length === 0) {
-          throw new Error('No hay datos disponibles para generar láminas.');
+          throw new Error(`No hay datos disponibles para ${endpoint}`);
         }
         return stickersList[Math.floor(Math.random() * stickersList.length)];
       });

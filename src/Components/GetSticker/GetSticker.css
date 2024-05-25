@@ -1,0 +1,82 @@
+
+.sobres {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+   
+  }
+  
+  .lamina {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  
+  
+  .lamina.en-album {
+    background-color: red;
+    color: white;
+  }
+  
+  .lamina.fuera-album {
+    background-color: #d2e7e5;
+    color: black;
+  }
+  
+  h1 {
+    font-family: 'Star Jedi', Arial, sans-serif; 
+    color: #FFD700; 
+    text-align: center;
+    font-size: 3rem; 
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 
+                 0 0 20px rgba(255, 215, 0, 0.6), 
+                 0 0 30px rgba(255, 215, 0, 0.4);
+    margin-top: 20px;
+    
+  
+  }
+  .sobres button {
+    background-color: #222; 
+    color: #FFD700; 
+    border: 2px solid #FFD700; 
+    padding: 10px 20px; 
+    font-size: 1.2rem; 
+    font-family: 'Star Jedi', Arial, sans-serif; 
+    cursor: pointer; 
+    margin: 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s, border 0.3s; 
+  }
+  
+  
+  .sobres button:hover {
+    background-color: #FFD700; 
+    color: #222; 
+    border: 2px solid #FFF; 
+  }
+  
+  
+  .sobres button:disabled {
+    background-color: #555; 
+    color: #999; 
+    border: 2px solid #999; 
+    cursor: not-allowed; 
+  }
+  body {
+    background-color: black; 
+    background-attachment: fixed; 
+  }
+  .laminas button{
+    background-color: #222; 
+    color: #FFD700; 
+    border: 2px solid #FFD700; 
+    padding: 10px 20px; 
+    font-size: 1.2rem; 
+    font-family: 'Star Jedi', Arial, sans-serif; 
+    cursor: pointer; 
+    margin: 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+  }

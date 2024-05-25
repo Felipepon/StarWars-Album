@@ -1,0 +1,48 @@
+
+.album {
+    text-align: center;
+  }
+  
+  .section {
+    margin: 20px 0;
+  }
+  
+  .stickers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  h2 {
+    color: azure;
+  }
+  
+  .sticker {
+    border: 1px solid #000;
+    padding: 10px;
+    margin: 10px;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .sticker.obtained {
+    background-color: #60EB0B;
+  }
+  
+  .sticker.special {
+    border: 2px solid gold; 
+  }
+  
+  .sticker.regular {
+    border: 2px solid silver; 
+  }
+  
+  .sticker button {
+    margin-top: 10px;
+  }
+  
+  .current-pack {
+    margin: 20px 0;
+  }
+  
