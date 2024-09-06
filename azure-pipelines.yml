@@ -1,0 +1,50 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+  - task: Npm@1
+    displayName: 'npm custom'
+    inputs:
+      command: custom
+      workingDir: ''
+      verbose: false
+      customCommand: 'install --force'
+  - task: Npm@1
+    displayName: 'npm serve'
+    inputs:
+      command: custom
+      workingDir: ''
+      verbose: false
+      customCommand: 'install -g serve'
+
+  - task: Npm@1
+    displayName: 'npm run build'
+    inputs:
+      command: custom
+      workingDir: ''
+      verbose: false
+      customCommand: 'run build'
+
+  - task: ArchiveFiles@2
+    displayName: 'Archive react-app'
+    inputs:
+      rootFolderOrFile: 'build'
+      includeRootFolder: false
+
+  - task: publishBuildArtifacts@1
+    displayName: 'Publish Artifac: drop'
+     
+ 
+
+ 
+ 
+ 
+ 
